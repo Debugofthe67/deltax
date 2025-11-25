@@ -332,7 +332,7 @@
 
   <!-- Bottom pill-shaped liquid glass navigation -->
   <nav class="bottom-bar" aria-label="Pill navigation">
-    <a href="#dns" class="nav-link">Delta<div class="active-indicator"></div></a>
+    <a href="#Delta" class="nav-link">Delta<div class="active-indicator"></div></a>
     <a href="#about" class="nav-link">About<div class="active-indicator"></div></a>
   </nav>
 
@@ -422,7 +422,7 @@
 
     // Bottom pill bar active state with sliding indicator
     const navLinks = Array.from(document.querySelectorAll('.bottom-bar .nav-link'));
-    const sections = ['dns', 'esign', 'about', 'top'].map(id => document.getElementById(id));
+    const sections = ['Delta', 'about', 'top'].map(id => document.getElementById(id));
     function setActiveLinkById(id) {
       navLinks.forEach(link => link.classList.remove('active'));
       const active = navLinks.find(l => l.getAttribute('href') === '#' + id);
